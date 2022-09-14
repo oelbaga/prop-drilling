@@ -1,8 +1,15 @@
+import { useState, createContext } from "react";
+import AppContext from "../components/AppContext";
 import Component2 from "../components/Component2";
 import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  const [nameContext, setNameContext] = useState("default");
+  return (
+    <AppContext.Provider value={{ nameContext, setNameContext }}>
+      <Component {...pageProps} />;
+    </AppContext.Provider>
+  );
 }
 
 export default MyApp;

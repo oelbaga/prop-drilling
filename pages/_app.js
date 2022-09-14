@@ -5,6 +5,7 @@ import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
   const [nameContext, setNameContext] = useState("default");
+  const anyValue = "";
   return (
     <AppContext.Provider value={{ nameContext, setNameContext }}>
       <Component {...pageProps} />;

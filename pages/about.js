@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
-      Hello from Parent Page
+      Hello from About Page
       <h1>Prop Value: {name}</h1>
       <button onClick={changeName}>Update State</button>
       <br />

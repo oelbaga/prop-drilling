@@ -15,8 +15,8 @@ export default function Home() {
   }, []);
   return (
     <div className={styles.container}>
-      <Header />
-      Parent Page
+      <Header activepage="about" />
+      About Page
       <h1 className={`context`}>Context Value: {context.nameContext}</h1>
       <br />
       <br />

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { useEffect, useState, useContext } from "react";
 import styles from "./Header.module.scss";
-export default function Component1({ name, setname }) {
+export default function Header() {
   useEffect(() => {
-    console.log("Component1 rendered");
+    console.log("Header rendered");
   }, []);
   return (
     <div className={styles.container}>
